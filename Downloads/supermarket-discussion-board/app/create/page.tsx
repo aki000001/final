@@ -129,25 +129,14 @@ export default function CreateThread() {
 
           <div>
             <label className="block text-sm font-medium text-foreground mb-2">
-              タイトル <span className="text-red-500">*</span>
-            </label>
-            <input
-              type="text"
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
-              placeholder="スレッドのタイトルを入力"
-              className="w-full px-4 py-2 bg-card border border-input rounded-lg text-card-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-              required
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium text-foreground mb-2">
-              本文 <span className="text-red-500">*</span>
+              投稿内容 <span className="text-red-500">*</span>
             </label>
             <textarea
               value={content}
-              onChange={(e) => setContent(e.target.value)}
+              onChange={(e) => {
+                setContent(e.target.value)
+                setTitle(e.target.value)
+              }}
               placeholder="内容を入力してください"
               rows={6}
               className="w-full px-4 py-2 bg-card border border-input rounded-lg text-card-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none"

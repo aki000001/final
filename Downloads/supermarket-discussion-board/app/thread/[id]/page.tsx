@@ -117,8 +117,6 @@ export default function ThreadPage() {
             <span className="text-xs text-muted-foreground">{new Date(thread.createdAt).toLocaleString("ja-JP")}</span>
           </div>
 
-          <h2 className="text-lg font-bold text-card-foreground mb-2 text-balance">{thread.title}</h2>
-
           <p className="text-sm text-card-foreground mb-3 whitespace-pre-wrap text-pretty">{thread.content}</p>
 
           {thread.rating && (
