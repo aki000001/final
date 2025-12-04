@@ -38,7 +38,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background pb-20">
-      <header className="sticky top-0 bg-card border-b border-border z-10 shadow-sm">
+      <header className="bg-card border-b border-border shadow-sm">
         <div className="max-w-2xl mx-auto px-3 py-3">
           <div className="flex items-center gap-2 mb-3">
             <div className="bg-gradient-to-r from-daido-navy to-daido-navy-dark rounded-lg p-1.5 shadow-md">
